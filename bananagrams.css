@@ -1,0 +1,63 @@
+
+	body {
+		background-color:#FFFFBB;
+		font-family:sans-serif;
+	}
+
+	h1 {
+		font-size:30px;
+		margin: 0 auto;
+		width:235px;
+	}
+
+	/* Need a background image */
+	div.bg_board {
+		background-image:url(grid_sq.gif);
+		background-repeat: x y;
+		/*position:relative;*/
+	}
+	div.bg_functions {
+		float: right;
+		height:80%;
+		width: 20%;
+	}
+	div#bg_bag {
+		background-color: yellow;
+		height: 19%;
+		margin-bottom: 1%;
+	}
+	div#bg_hand {
+		background-color: #cfc;
+		height: 80%;
+	}
+	div#bg_played {
+		background-color:#c97;
+		width:79%; height:80%;
+	}
+	div.bg_tile {
+		background-image: url(tile.gif);
+		cursor: pointer;
+		font-size: 30px;
+		line-height: 40px;
+		position: absolute;
+		text-align: center;
+		width:40px; height:40px;
+		z-index: 20;
+	}
+	/*
+	div#bg_hand div.bg_tile {
+		position:relative;
+		float:left;
+	}*/
+	div.bg_tile.ui-draggable-dragging {
+		color:green;
+		position:absolute !important;
+		z-index: 200;
+	}
+	div.bg_debug {
+		position:absolute;
+		top : 5px;
+		right: 5px;
+		background-color: #ccc;
+		opacity: 50%;
+	}
